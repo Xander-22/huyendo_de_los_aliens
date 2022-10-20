@@ -7,6 +7,8 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.awt.event.MouseEvent;
+import java.awt.event.MouseMotionListener;
 
 public class GameManager extends JFrame {
     JPanel spaceMap = new JFondo("/resource/wallpaper/spaceMap.jpg");
@@ -14,8 +16,9 @@ public class GameManager extends JFrame {
     JButton exitButton = new JButton();
 
     public GameManager(){
-        setupView();
-        setContentPane(spaceMap);
+        //setupView();
+        getContentPane().add(new JFondo(""));
+        //setContentPane(spaceMap);
     }
 
     public void setupView() {
@@ -57,5 +60,6 @@ public class GameManager extends JFrame {
     private void addView1ToView2(Component view1, JComponent view2) {
         view2.add(view1);
     }
+
 }
 

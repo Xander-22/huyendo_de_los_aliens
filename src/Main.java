@@ -1,10 +1,17 @@
+import utils.JFondo;
 import viewController.GameManager;
 
 import javax.swing.*;
 
 public class Main {
     public static void main(String[] args) {
-        runIndex();
+        JFrame f = new JFrame("");
+        f.getContentPane().add(new JFondo(""));
+        f.setLocationRelativeTo(null);
+        f.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        f.setSize(500, 500);
+        f.setVisible(true);
+        //runIndex();
     }
 
     public static void runIndex(){
